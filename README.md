@@ -40,7 +40,7 @@ Split the image (boy.jpg) into B, G, R components and display the channels
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-img =cv2.imread('Eagle_in_Flight.jpg',cv2.IMREAD_COLOR)
+img =cv2.imread('eagle in flight.jpg',cv2.IMREAD_COLOR)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 ```
 
@@ -58,7 +58,7 @@ plt.show()
 
 #### 4. Save the image as a PNG file using OpenCV imwrite().
 ```
-img=cv2.imread('Eagle_in_Flight.jpg')
+img=cv2.imread('eagle in flight.jpg')
 cv2.imwrite('Eagle.png',img)
 ```
 
@@ -100,7 +100,7 @@ plt.axis("off")
 
 #### 10. Read in the image ('Apollo-11-launch.jpg').
 ```
-img=cv2.imread('Apollo-11-launch.jpg',cv2.IMREAD_COLOR)
+img=cv2.imread('apollo 11 launch.jpg',cv2.IMREAD_COLOR)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img_rgb.shape
 ```
@@ -128,7 +128,7 @@ plt.show()
 
 #### 14. Read the image ('Boy.jpg').
 ```
-img =cv2.imread('boy.jpg',cv2.IMREAD_COLOR)
+img =cv2.imread('boy image.jpg',cv2.IMREAD_COLOR)
 img_rgb= cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
 ```
 
@@ -213,75 +213,55 @@ plt.show()
 
 ## Output:
 - ### *i)* Read and Display an Image.  
-   1.Read 'Eagle_in_Flight.jpg' as grayscale and display:
-
-![image](https://github.com/user-attachments/assets/8fbee7a1-6682-4ebc-bf5d-0e99168fe414)
+   1.Read 'eagle in flight.jpg' as grayscale and display:
+  
+  <img width="732" height="480" alt="image" src="https://github.com/user-attachments/assets/0fc22a95-114c-4d17-9e3e-5072543ffb47" />
 
   2.Save image as PNG and display:
+   <img width="693" height="497" alt="image" src="https://github.com/user-attachments/assets/4440e222-4ac0-4537-9695-30bdc9fb2d92" />
 
-![image](https://github.com/user-attachments/assets/f3c7b81e-a1d3-47d8-8bce-41506c62019f)
 
   3.Cropped image:
 
-![image](https://github.com/user-attachments/assets/6844ce30-4221-4a0f-baa4-ffb871f70048)
+<img width="456" height="517" alt="image" src="https://github.com/user-attachments/assets/a009d2b2-bffb-4bcd-aae7-77cb93328651" />
 
   4.Resize and flip Horizontally:
   
-![image](https://github.com/user-attachments/assets/52f120d2-1e32-4f45-8ca6-30b834ada0d1)
+<img width="505" height="512" alt="image" src="https://github.com/user-attachments/assets/fb941c2c-537b-4f23-a496-c3c259c36b3a" />
 
   5.Read 'Apollo-11-launch.jpg' and  Display the final annotated image:
 
-![image](https://github.com/user-attachments/assets/f9f8af66-0811-4ef7-93dd-26fd825533b7)
+<img width="683" height="548" alt="image" src="https://github.com/user-attachments/assets/bc788618-c501-4cf5-ad0a-93ba63bfc816" />
 
 - ### *ii)* Adjust Image Brightness.
 
 1.Create brighter and darker images and display:
 
-![image](https://github.com/user-attachments/assets/2fbdf2e6-53b6-4789-b1f7-1c04a2a58af0)
-
-![image](https://github.com/user-attachments/assets/84944e6d-1f8a-4db8-8f53-d3d2bbbd6e1c)
-
-![image](https://github.com/user-attachments/assets/217de5b6-93f7-4495-95a6-549a1a182976)
-
+<img width="767" height="340" alt="image" src="https://github.com/user-attachments/assets/ed9ace34-fd1e-4e4c-91df-c9417360537d" />
 
 
 - ### *iii)* Modify Image Contrast.  
 1. Modify contrast using scaling factors 1.1 and 1.2:
 
-![image](https://github.com/user-attachments/assets/4139717b-33aa-43b6-9bc2-5783780a1eb5)
-
-![image](https://github.com/user-attachments/assets/c96ec7ac-58aa-4729-9431-fdf31838a5f7)
-
-![image](https://github.com/user-attachments/assets/e19b467e-0ab4-44af-a235-921af100fe3d)
+<img width="758" height="341" alt="image" src="https://github.com/user-attachments/assets/064fbad4-11d0-49a0-8446-7f0c3838dff6" />
 
 
 - ### *iv)* Generate Third Image Using Bitwise Operations.
 
 1.Split 'Boy.jpg' into B, G, R components and display:
 
-![image](https://github.com/user-attachments/assets/30364c56-0f70-4d05-b1fe-e504bbc830f4)
-
-![image](https://github.com/user-attachments/assets/fc200792-bf96-4e55-bb12-d9c07df40092)
-
-![image](https://github.com/user-attachments/assets/86c9a27b-a0ac-4cdd-924b-bd3173a3cee9)
+<img width="762" height="325" alt="image" src="https://github.com/user-attachments/assets/047d4065-30f6-4ee4-ac35-9e6e264df4a4" />
 
 2.Merge the R, G, B channels and display:
 
-![image](https://github.com/user-attachments/assets/09d5507f-ae48-4ab3-bc7d-9b7466ce7e81)
+<img width="402" height="535" alt="image" src="https://github.com/user-attachments/assets/443fbeba-438c-4471-b3ca-f3b316fa6cbf" />
 
 3.Split the image into H, S, V components and display:
-
-![image](https://github.com/user-attachments/assets/5cfbee49-3082-44da-ab63-fbe813392013)
-
-![image](https://github.com/user-attachments/assets/74412dc1-b2a1-4261-af9c-0bec8f2165d6)
-
-![image](https://github.com/user-attachments/assets/c0612cd0-1dcc-4c4f-b9f7-501b18468184)
-
+<img width="761" height="333" alt="image" src="https://github.com/user-attachments/assets/086da0a6-4b16-4ca3-9f25-2dec51bf5e47" />
 
 4.Merge the H, S, V channels and display:
 
-![image](https://github.com/user-attachments/assets/3c8fa07d-31ff-4b14-87c1-061ffef0447e)
-
+<img width="737" height="528" alt="image" src="https://github.com/user-attachments/assets/e868ebba-85f4-429a-8fd9-c1d7f191ebca" />
 
 ## Result:
 Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
